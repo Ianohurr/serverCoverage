@@ -345,10 +345,10 @@ def sendEmail(list):
     global nodesInScienceLogic
     global nodesNotInScienceLogic
     #Set up email address to send from
-    MY_ADDRESS = 'DLInfrastructureTools@ent.rt.csaa.com'
+    MY_ADDRESS = 'Removed for privacy'
     # set up the SMTP server
     try:
-        s = smtplib.SMTP('172.26.156.125', 25)
+        s = smtplib.SMTP('Removed for privacy', 25)
         s.starttls()
         s.login('user','pass')
     except:
@@ -368,7 +368,7 @@ def sendEmail(list):
 
         # setup the parameters of the message
         msg['From']=MY_ADDRESS
-        msg['To']='Suzanne.Eden@csaa.com'
+        msg['To']='Removed for privacy'
         msg['Subject']="This is TEST"
         part = MIMEBase('application', "octet-stream")
         filename = list+" Coverage Report.xlsx"
@@ -389,7 +389,7 @@ def sendEmail(list):
 
 def main():
     start=time.strftime("%H:%M:%S")
-    answer=input("Do you want to send this output as an email to Suzanne? (Y/N)")
+    answer=input("Do you want to send this output as an email to Removed for privacy (Y/N)")
     print("The script analyzes ~80 machines in 60 seconds")
     SLlist=input("Please enter the Sciencelogic file name including the file extension (EX:sciencelogic.csv): ")
     list=input("Please enter the list name including the file extension (EX:WindowsList.csv): ")
